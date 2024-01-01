@@ -10,7 +10,8 @@ const Contact = () => {
           </ScrollAnimations>
           </h1>
         <h1 className='primary-heading'>
-          <ScrollAnimations>Let's Get To Know Better
+          <ScrollAnimations>
+            Let's Get To Know Better
           </ScrollAnimations>
           </h1>
         <div className='contact-form-container'>

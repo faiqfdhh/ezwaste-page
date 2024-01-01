@@ -38,8 +38,8 @@ const Navbar = () => {
   ];
   return (
     <nav>
-      <div className="nav-logo-container" style={{height:'54.8px'}}>
-        <img src={Logo} alt="" />
+      <div className="nav-logo-container" style={{height:'54.8px',borderRadius:'8px'}}>
+        <img src={Logo} alt="" style={{height:"72px"}}/>
       </div>
       <div className="navbar-links-container">
         <a href="">Home</a>
@@ -47,7 +47,7 @@ const Navbar = () => {
         <a href="">Testimonials</a>
         <a href="">Contact</a>
     
-        <button className="primary-button">Download Now</button>
+       
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />

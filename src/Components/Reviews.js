@@ -94,7 +94,7 @@ const CarouselExample = () => {
               justifyContent: 'center',
               height: '100%',
             }}>"{item.text}"</p>
-            <div style={{ textAlign: 'center', margin: '3rem 3rem',fontSize:"20px"}}>
+            <div style={{ textAlign: 'center', margin: '0 auto',fontSize:"20px"}}>
               {Array.from({ length: item.stars }, (_, i) => (
                 <span key={i}>⭐</span>
               ))}
