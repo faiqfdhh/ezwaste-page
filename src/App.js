@@ -5,6 +5,7 @@ import Steps from './Components/Steps';
 import Reviews from './Components/Reviews';
 import Contact from './Components/Contact';
 import Footer  from './Components/Footer';
+import Faq from './Components/FAQ';
 
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
     <Steps />
     <Reviews />
     <Contact></Contact>
+    <Faq></Faq>
     <Footer></Footer>
+
     </div>
 
   );
