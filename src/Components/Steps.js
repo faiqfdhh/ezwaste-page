@@ -33,21 +33,29 @@ const Steps = () => {
     <div className="work-section-wrapper">
       <div className="work-section-top">
         <p className="primary-subheading"></p>
-        <h1 className="primary-heading" >How EZWaste Works</h1>
+        <h1 className="primary-heading" >
+          <ScrollAnimations>
+          How EZWaste Works
+          </ScrollAnimations>
+          </h1>
 
         <p className="primary-text">
+          <ScrollAnimations>
           Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
           elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+          </ScrollAnimations>
         </p>
       </div>
       <div className="work-section-bottom">
         {workInfoData.map((data) => (
           <div className="work-section-info" key={data.title}>
+            <ScrollAnimations>
             <div className="info-boxes-img-container">
               <img src={data.image} alt="" />
             </div>
             <h2>{data.title}</h2>
             <p>{data.text}</p>
+            </ScrollAnimations>
           </div>
         ))}
       </div>

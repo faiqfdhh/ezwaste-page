@@ -6,6 +6,7 @@ import ProfilePic2 from '../Images/faiq1.jpg';
 import ProfilePic3 from '../Images/rando.jpg';
 import ProfilePic4 from '../Images/shamira.jpg';
 import ReviewBackground from '../Images/ReviewBackground.png';
+import { ScrollAnimations } from './ScrollAnimation.tsx';
 
 const items = [
   {
@@ -43,14 +44,16 @@ const CarouselExample = () => {
     <div className='review-section-info'>
       
       <div className="work-section-top">
+        <ScrollAnimations>
         <p className="primary-subheading">Testimonial</p>
         <h1 className="primary-heading">What They Are Saying</h1>
         <p className="primary-text">
           Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
           elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
         </p>
+        </ScrollAnimations>
       </div>
-
+<ScrollAnimations>
       <Carousel
         animation="fade"
         style={{
@@ -99,6 +102,7 @@ const CarouselExample = () => {
           </Paper>
         ))}
       </Carousel>
+      </ScrollAnimations>
     </div>
 
   </div>

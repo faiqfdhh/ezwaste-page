@@ -30,7 +30,7 @@ export const ScrollAnimations: React.FC<Props> = ({ children, width = "100%" }) 
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 1, delay: 0.5 }}
+        transition={{ duration: 0.4, delay: 0.2 }}
       >
         {children}
       </motion.div>
@@ -41,7 +41,7 @@ export const ScrollAnimations: React.FC<Props> = ({ children, width = "100%" }) 
         }}
         initial="hidden"
         animate={slideControls}
-        transition={{ duration: 1, ease: "easeIn" }}
+        transition={{ duration: 0.4, ease: "easeOut" }}
         style={{ 
 
         position: "absolute", 
