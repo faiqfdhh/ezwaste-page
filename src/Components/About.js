@@ -5,7 +5,9 @@ import { ScrollAnimations } from "./ScrollAnimation.tsx";
 
 const About = () => {
   return (
+    
     <div className="about-section-container">
+      <br></br><br></br><br></br><br></br>
       <div className="about-background-image-container">
         <img src={AboutBackground} alt="" />
       </div>

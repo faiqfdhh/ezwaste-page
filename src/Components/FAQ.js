@@ -1,5 +1,5 @@
-import { ExpandCircleDown, ExpandCircleDownSharp } from "@mui/icons-material";
-import { Accordion,AccordionSummary, AccordionDetails,Typography} from "@mui/material";
+import {  ExpandCircleDownSharp } from "@mui/icons-material";
+import { Accordion,AccordionSummary, AccordionDetails} from "@mui/material";
 
 
  const Faq = () => {

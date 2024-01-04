@@ -352,6 +352,8 @@ nav {
   .secondary-button{
     text-align: center;
   }
+ 
+
 }
 @media (max-width: 800px) {
   body, html {
@@ -502,5 +504,4 @@ nav {
   z-index: -2;
   width: 50%;
 }
-
 

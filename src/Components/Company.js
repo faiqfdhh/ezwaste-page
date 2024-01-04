@@ -5,7 +5,9 @@ import FaiqPicture from '../Images/faiqPicture.jpg';
 
  const Company = () => {
     return (
+        
         <div className='company-section-wrapper'>
+            <br/><br/><br/><br/><br/>
                 
                 <Grid container>
                         <Grid item xs={6.5} >

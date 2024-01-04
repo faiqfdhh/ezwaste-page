@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import Logo from "../Images/logo.svg";
 import { HiOutlineBars3 } from "react-icons/hi2";
@@ -42,10 +41,10 @@ const Navbar = () => {
         <img src={Logo} alt="" style={{height:"72px"}}/>
       </div>
       <div className="navbar-links-container">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Testimonials</a>
-        <a href="">Contact</a>
+        <a href=".">Home</a>
+        <a href="./Company">Our Team</a>
+        <a href="./Reviews">Reviews</a>
+        <a href="./Contact">Contact</a>
     
        
       </div>
