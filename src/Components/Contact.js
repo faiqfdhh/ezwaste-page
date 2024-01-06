@@ -3,7 +3,6 @@ import { ScrollAnimations } from './ScrollAnimation.tsx';
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
 
-
 const Contact = () => {
   const Alert = React.forwardRef(function Alert(props, ref) {
     return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
@@ -11,8 +10,10 @@ const Contact = () => {
 
   const [formValues, setFormValues] = useState({
     email: '',
+    message: '',
   });
   const [emailError, setEmailError] = useState('');
+  const [messageError, setMessageError] = useState('');
 
   const [snackbarState, setSnackbarState] = useState({
     open: false,
@@ -34,7 +35,9 @@ const Contact = () => {
       ...prevValues,
       [name]: value,
     }));
+    // Clear validation errors on change
     setEmailError('');
+    setMessageError('');
   };
 
   const isEmailValid = (email) => {
@@ -43,10 +46,21 @@ const Contact = () => {
   };
 
   const isFormValid = () => {
-    const isValid = isEmailValid(formValues.email.trim());
-    if (!isValid) {
+    let isValid = true;
+
+    if (!formValues.email.trim()) {
+      setEmailError('Email is required.');
+      isValid = false;
+    } else if (!isEmailValid(formValues.email.trim())) {
       setEmailError('Please enter a valid email address.');
+      isValid = false;
     }
+
+    if (!formValues.message.trim()) {
+      setMessageError('Message is required.');
+      isValid = false;
+    }
+
     return isValid;
   };
 
@@ -56,6 +70,7 @@ const Contact = () => {
     if (isFormValid()) {
       console.log({
         email: formValues.email,
+        message: formValues.message,
       });
 
       // Display success notification
@@ -69,7 +84,7 @@ const Contact = () => {
     <div className='contact-page-wrapper'>
       <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
       <h1 className='primary-heading'>
-        <ScrollAnimations>Want to know more? Contact Us Below!</ScrollAnimations>
+        <ScrollAnimations>Want to know more? <br/> Contact Us Below!</ScrollAnimations>
       </h1>
       <h1 className='primary-heading'>
         <ScrollAnimations>Let's Get To Know Better</ScrollAnimations>
@@ -82,8 +97,20 @@ const Contact = () => {
             name='email'
             value={formValues.email}
             onChange={handleChange}
+            style={{ width: '320px' }}
           />
           <span style={{ color: 'red' }}>{emailError}</span>
+
+          <input
+            type='text'
+            placeholder='Write your message here'
+            name='message'
+            value={formValues.message}
+            onChange={handleChange}
+            style={{ width: '520px', height: '200px' }}
+          />
+          <span style={{ color: 'red' }}>{messageError}</span>
+
           <button type='submit' className='secondary-button'>
             Submit
           </button>
@@ -96,7 +123,7 @@ const Contact = () => {
         onClose={handleCloseSnackbar}
       >
         <Alert onClose={handleCloseSnackbar} severity="success">
-          Email sent! Our team will be in touch with you soon.
+          Message sent! Our team will be in touch with you soon.
         </Alert>
       </Snackbar>
     </div>
