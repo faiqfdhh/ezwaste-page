@@ -13,6 +13,8 @@ import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
+import HowToRegIcon from '@mui/icons-material/HowToReg';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -20,21 +22,30 @@ const Navbar = () => {
     {
       text: "Home",
       icon: <HomeIcon />,
+      path: "/",
     },
     {
       text: "About",
       icon: <InfoIcon />,
+      path: "/Company",
     },
     {
       text: "Testimonials",
       icon: <CommentRoundedIcon />,
+      path: "/Reviews",
     },
     {
       text: "Contact",
       icon: <PhoneRoundedIcon />,
+      path: "/Contact",
     },
-
+    {
+      text: "Sign Up",
+      icon: <HowToRegIcon />,
+      path: "/Signup",
+    },
   ];
+
   return (
     <nav>
       <div className="nav-logo-container" style={{height:'54.8px',borderRadius:'8px'}}>
@@ -45,8 +56,7 @@ const Navbar = () => {
         <a href="./Company">Our Team</a>
         <a href="./Reviews">Reviews</a>
         <a href="./Contact">Contact</a>
-    
-       
+        <Link to="/Signup" style={{color:'white',backgroundColor:'#fe9e0d',borderRadius:'8px',padding:'8px 20px'}}>Sign up</Link>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
@@ -61,7 +71,7 @@ const Navbar = () => {
           <List>
             {menuOptions.map((item) => (
               <ListItem key={item.text} disablePadding>
-                <ListItemButton>
+                <ListItemButton component={Link} to={item.path}>
                   <ListItemIcon>{item.icon}</ListItemIcon>
                   <ListItemText primary={item.text} />
                 </ListItemButton>
