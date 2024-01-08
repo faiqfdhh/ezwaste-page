@@ -25,8 +25,8 @@ function App() {
 
   if (loading) {
     return(
-    <div className='loading-screen' style={{ margin: '40vh auto 0 auto', width: '20vw', height: '20vh' }}>
-    <img src={LoadingScreen} alt="Loading..."  style={{width:'100%',height:'100%',backgroundColor:'#f6f6f6'}}/>
+    <div className='loading-screen' >
+    <img src={LoadingScreen} alt="Loading..."  />
     </div>
     );
   }

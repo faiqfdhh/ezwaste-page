@@ -7,6 +7,9 @@ import {ScrollAnimations}  from "./ScrollAnimation.tsx";
 import About from "./About.js";
 import Steps from "./Steps.js";
 import { useNavigate } from "react-router-dom";
+import 'video-react/dist/video-react.css';
+import { Player } from 'video-react';
+import Video from "../Images/CAT201VIDEO.mp4";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -40,7 +43,14 @@ const Home = () => {
                 <img src={HeroBanner} alt="" />
             </div>
             </div>
+            <div className="video-container" style={{marginTop:'1rem',marginBottom:'10rem'}}>
+    <Player >
+      <source src={Video} />
+    </Player>
+    </div>
+
         <About/>
+
         <Steps/>
 
         <br></br> <br></br> <br></br>
