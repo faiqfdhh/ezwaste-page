@@ -11,28 +11,29 @@ import { ScrollAnimations } from './ScrollAnimation.tsx';
 const items = [
   {
     profilePic: ProfilePic1,
-    text: "Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.",
+    text: "'Recycling is easier than before thanks to EZWaste.'",
     stars: 5,
-    author: "John Doe",
+    author: "Amir Ahnaf",
   },
   {
     profilePic: ProfilePic2,
-    text: "Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.",
+    text: " “Personally, I think that the user interface is pretty and easy to navigate. There is also many driver available in my area to picks my recyclable waste .”",
     stars: 5,
-    author: "Jane Doe",
+    author: "Zhang Wei",
   },
   {
     profilePic: ProfilePic3,
-    text: "Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.",
+    text: "“As a housewife, this app helps me as I don’t have to go to the recycling center on my own. Now, I just need to schedule for pickup time, then any driver will accept my request  and came on schedule date and time. ”",
     stars: 5,
-    author: "Bob Smith",
+    author: "Natalia Amir",
   },
   {
     profilePic: ProfilePic4,
-    text: "Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.",
+    text: " “This app makes me want to recycle more with its good rewards!!!”",
     stars: 5,
-    author: "Alice Johnson",
+    author: "A.R Rahman",
   },
+  
 ];
 
 const CarouselExample = () => {
@@ -48,8 +49,7 @@ const CarouselExample = () => {
         <p className="primary-subheading">Testimonial</p>
         <h1 className="primary-heading">What They Are Saying</h1>
         <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+        Discover the firsthand experiences and reviews from our vibrant community, diving into the stories that fuel our exceptional EZWaste app.
         </p>
         </ScrollAnimations>
       </div>

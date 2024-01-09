@@ -10,22 +10,22 @@ const Steps = () => {
         {
           image: PackWaste,
           title: "Pack your waste",
-          text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et sagittis duis elementum interdum facilisi bibendum.",
+          text: "Collect and pack any waste and recyclable materials such as metal, plastic and paper into one or more single containers to be picked up.",
         },
         {
           image: TapButton,
           title: "Schedule your delivery",
-          text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et ",
+          text: "Schedule your delivery effortlessly using EZWaste app.",
         },
         {
           image: CarDelivery,
           title: "Wait for your driver",
-          text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
+          text: "Experience real-time driver tracking with our advanced system—watch and anticipate your driver's arrival hassle-free!",
         },
         {
           image: GetRewarded,
           title: "Get rewarded with points!",
-          text: "Loremdolor sit amet consectetur. Maecenas orci et lorem ipsum",
+          text: "Unlock exclusive rewards by earning points!",
         },
       ];
       
@@ -41,8 +41,7 @@ const Steps = () => {
 
         <p className="primary-text">
           <ScrollAnimations>
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+          Pack your waste, schedule pickup, wait for your driver, and earn points! Our hassle-free service transforms daily waste disposal and recycling by conveniently collecting from your doorstep.
           </ScrollAnimations>
         </p>
       </div>

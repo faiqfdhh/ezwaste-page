@@ -11,6 +11,7 @@ import Faq from './Components/FAQ';
 import Company from './Components/Company';
 import SignUp from './Components/Signup';
 import LoadingScreen from "./Images/Loading1-unscreen.gif";
+import ComingSoon from './Components/ComingSoon';
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
             <Route path="reviews" element={<Reviews />} />
             <Route path="steps" element={<Steps />} />
             <Route path="signup" element={<SignUp />} />
+            <Route path='comingsoon' element={<ComingSoon />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -10,6 +10,7 @@ import { useNavigate } from "react-router-dom";
 import 'video-react/dist/video-react.css';
 import { Player } from 'video-react';
 import Video from "../Images/CAT201VIDEO.mp4";
+import Faq from "./FAQ.js";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -53,11 +54,14 @@ const Home = () => {
 
         <Steps/>
 
-        <br></br> <br></br> <br></br>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
         <div className="signup-button" style={{display:'flex',justifyContent:'center'}}>
         <button className="secondary-button" style={{width:'500px',height:'100px',fontSize:'50px'}} onClick={handleButtonClick}> Sign Up Now!</button>
         </div>
-        </div> // Added closing tag for the div element
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <Faq/>
+        </div> 
      );
 }
  
