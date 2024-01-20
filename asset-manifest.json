@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cb711ab8.css",
+    "main.js": "/static/js/main.a2e2401c.js",
+    "static/media/CAT201VIDEO.mp4": "/static/media/CAT201VIDEO.069c31a40b70e53684c3.mp4",
+    "static/media/Board.png": "/static/media/Board.917a47c7e9069e2fe95b.png",
+    "static/media/Loading1-unscreen.gif": "/static/media/Loading1-unscreen.efc82fe962fa5ebef612.gif",
+    "static/media/nabilaProfile.png": "/static/media/nabilaProfile.d4c8eb4b329b6779d74c.png",
+    "static/media/anwarProfile.png": "/static/media/anwarProfile.fcf6a3aa214b89c7406e.png",
+    "static/media/faridProfile.png": "/static/media/faridProfile.d5890167c5828dfdffac.png",
+    "static/media/rando.jpg": "/static/media/rando.5341f7873e7122146c6b.jpg",
+    "static/media/ReviewBackground.png": "/static/media/ReviewBackground.9d2cb3e1aa0906fc70cd.png",
+    "static/media/AboutBanner.png": "/static/media/AboutBanner.bc8fdcc975211645fb92.png",
+    "static/media/AboutBanner2.png": "/static/media/AboutBanner2.971a1c690648fff7d210.png",
+    "static/media/HomeBanner.png": "/static/media/HomeBanner.2c6f9511dcfa46bbe6dd.png",
+    "static/media/AboutBackground.png": "/static/media/AboutBackground.e0f5da217964c87d9fa4.png",
+    "static/media/armanProfile.jpg": "/static/media/armanProfile.b57d1eee296ed5e3408a.jpg",
+    "static/media/CompanyBG.png": "/static/media/CompanyBG.5b85c169e0b50234ad37.png",
+    "static/media/faiq.jpg": "/static/media/faiq.c14cc0eceb5e16b56b40.jpg",
+    "static/media/faiqProfile.jpg": "/static/media/faiqProfile.0d2d0d44903e7729b04a.jpg",
+    "static/media/HeroBanner.png": "/static/media/HeroBanner.503b2cd880b3d89b605d.png",
+    "static/media/404.png": "/static/media/404.598487fa749ba1e14c15.png",
+    "static/media/Wondering.png": "/static/media/Wondering.681be64d5477bf31d837.png",
+    "static/media/TapButton.png": "/static/media/TapButton.c6b7b552f632d1c79bb8.png",
+    "static/media/shamira.jpg": "/static/media/shamira.9de64c2954b5ca5042f9.jpg",
+    "static/media/GetRewarded.png": "/static/media/GetRewarded.1a3e2cfd0172ffd7c8bf.png",
+    "static/media/faiq1.jpg": "/static/media/faiq1.7da60e107e150240715d.jpg",
+    "static/media/PackWaste1.png": "/static/media/PackWaste1.8566a1a9b2493ec01d85.png",
+    "static/media/CarDelivery.png": "/static/media/CarDelivery.c74bddb2c9957877785b.png",
+    "static/media/logo.svg": "/static/media/logo.717ba8ec6db531714096c55972018129.svg",
+    "index.html": "/index.html",
+    "main.cb711ab8.css.map": "/static/css/main.cb711ab8.css.map",
+    "main.a2e2401c.js.map": "/static/js/main.a2e2401c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb711ab8.css",
+    "static/js/main.a2e2401c.js"
+  ]
+}
